@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-primary-serif);
+  --font-sans: var(--font-primary-sans);
+
+  /* Eden */
+  --color-coffee-dark: #254E35;
+  /* Sugar Swizzle */
+  --color-coffee-light: #F3F0E9;
+  /* Deep Eden for body text */
+  --color-coffee-text: #1a3826;
+  /* Muted tone that matches Eden */
+  --color-coffee-muted: #6b8272;
+  /* Kelp */
+  --color-brand: #9A8467;
+  /* Frosty Green */
+  --color-accent: #A2B5A5;
+}
+
+:root {
+  --font-primary-serif: "Playfair Display", serif;
+  --font-primary-sans: "Outfit", sans-serif;
+}
+
+html[dir="rtl"] {
+  --font-primary-serif: "Amiri", serif;
+  --font-primary-sans: "Cairo", sans-serif;
+}
+
+body {
+  background-color: var(--color-coffee-light);
+  color: var(--color-coffee-text);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+}
